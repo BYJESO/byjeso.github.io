@@ -1,0 +1,28 @@
+
+.dark-mode {
+  padding: 0.5em 0;
+  font-size: 1.5em;
+  border-bottom: 1px solid;
+  display: flex;
+  align-items: center;
+  &__text {
+    margin: 0;
+    padding-right: 10px;
+  }
+}
+
+.dark-mode--header {
+  @extend .dark-mode;
+  .dark-mode__text{
+    @include media (tablet){
+      margin: 0;
+      padding: 10px 10px 10px 20px;
+      margin-left: 10px;
+      border-left: 1px solid;
+    }
+  }
+  @include media (tablet){
+    font-size: 1rem;
+    border: none;
+  }
+}

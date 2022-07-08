@@ -1,0 +1,57 @@
+%button{
+  border: 1px solid;
+  border-radius: 5px;
+  text-decoration: none;
+  transition-duration: 0.2s;
+  opacity: 1;
+}
+
+@mixin button-hover ($background, $color){
+  &:hover{
+    color: $color;
+    background-color: $background;
+    opacity: 1;
+  }
+}
+
+.button--header {
+  @include media(tablet){
+    @include button-hover(#fff,var(--background-hero));
+    border: 1px solid;
+    border-radius: 5px;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    height: initial;
+    padding: 10px 20px;
+    margin: 14px 0;
+  }
+}
+
+
+.button--url {
+  @extend %button;
+  @include button-hover($color-principal,var(--background));
+  padding: 5px 20px;
+  color: $color-principal;
+}
+
+.button--email {
+  @extend %button;
+  @include button-hover(transparent,#fff);
+  margin: 1em auto 1em;
+  width: 171px;
+  color: gray;
+  padding: 10px 20px 10px 25px;
+  background-color: white;
+  background-image: url(../images/envelope.svg);
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+  display: block;
+  color: gray;
+
+  &:hover{
+    background-image: url(../images/envelope-hover.svg);
+  }
+}

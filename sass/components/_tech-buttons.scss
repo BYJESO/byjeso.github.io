@@ -1,0 +1,70 @@
+.tech-button {
+	padding: 0px 3%;
+	color: white;
+	background-color: $color-principal;
+	border-radius: 10px;
+	text-align: center;
+}
+.tech-button--javascript {
+	color: #000000;
+	background-color: #f7df1e;
+	text-transform: capitalize;
+}
+
+.tech-button--html {
+	background-color: #ff4500;
+	text-transform: uppercase;
+}
+
+.tech-button--css {
+	background-color: #1f5faa;
+}
+.tech-button--nodejs {
+	color: #659a60;
+	background-color: #f7f7f7;
+	border: 1px solid;
+}
+.tech-button--angular {
+	background-color: #dd0031;
+}
+.tech-button--react {
+	color: #03d6f6;
+	background-color: #232325;
+}
+.tech-button--svelte {
+	color: #f73c00;
+	background-color: #fff;
+	border: 1px solid;
+}
+.tech-button--sass {
+	color: #fff;
+	background-color: #bf608f;
+	text-transform: uppercase;
+}
+.tech-button--php {
+	color: #26182e;
+	background-color: #7377ad;
+	-webkit-text-stroke: 0.1px #fff;
+	text-transform: uppercase;
+}
+.tech-button--vue {
+	background: linear-gradient(
+		90deg,
+		rgba(0, 179, 123, 1) 0%,
+		rgba(45, 70, 92, 1) 100%
+	);
+}
+.tech-button--api-rest {
+	background-color: #01d849;
+}
+.tech-button--wordpress {
+	background-color: #1f5faa;
+	color: #fff;
+	border: 1px solid #fff;
+	box-shadow: 0px 0px 0px 2px #1f5faa;
+}
+
+.tech-button--skill {
+	@extend .tech-button;
+	height: fit-content;
+}

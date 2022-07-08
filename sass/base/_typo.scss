@@ -1,0 +1,36 @@
+
+body {
+  font-family: $font-regular;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-title;
+  font-weight: normal;
+}
+
+
+
+.title {
+  color: $color-principal;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0 0 1.2rem 0;
+
+  @include media (tablet){
+    margin-top: 0.83em;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+  }
+
+  @include media (desktop-m){
+    margin-left: 20px;
+  }
+}

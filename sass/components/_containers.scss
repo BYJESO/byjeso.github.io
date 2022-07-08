@@ -1,0 +1,28 @@
+%container {
+  flex: 1;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+  grid-template-areas: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+  color: inherit;
+}
+
+.container--link {
+  @extend %container;
+}
+
+.container--size{
+  @extend %container;
+  margin: 0 15px;
+  max-width: 1024px;
+  @include media (desktop-m){
+      margin: 0 auto;
+  }
+}

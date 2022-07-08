@@ -1,0 +1,50 @@
+.hero {
+  background-color: var(--background-hero);
+  box-shadow: inset 0px 4px 7px 0px black;
+  transition: 0.3s ease all;
+  padding: 3em 1em;
+  position: relative;
+  overflow: hidden;
+
+  &__image {
+    height: 300px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+
+    @include media (desktop-m){
+      position: unset;
+    }
+  }
+  &__title{
+    font-size: 1.2em;
+    line-height: 1.5;
+    letter-spacing: -0.2px;
+    color: $hero-title-color;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    &__strong{
+      color: $color-principal;
+    }
+    @include media(mobile-m){
+      font-size: 1.5em;
+    }
+    @include media(tablet){
+      font-size: 40px;
+    }
+  }
+  @include media(tablet){
+    padding: 2em;
+  }
+  @include media(desktop-m){
+    height: 300px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: unset;
+  }
+}

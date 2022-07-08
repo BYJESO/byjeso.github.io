@@ -1,0 +1,44 @@
+.skills {
+  margin-top: 20px;
+  @include media (tablet){
+    display: flex;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 33vh;
+
+    .tech-button {
+      margin: auto 20px;
+    }
+
+    @include media (tablet){
+      width: 40%;
+      height: 80%;
+      margin-top: 10px;
+    }
+  }
+  &__image { 
+    display: flex;
+    margin: 0 auto;
+    height: 33vh;
+    justify-content: center;
+    @include media (tablet){
+      width: 20%;
+    }
+    @include media (desktop-m){
+      height: unset;
+    }
+
+    &__img {
+      height: 100%;
+      @include media (tablet){
+        width: 110%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

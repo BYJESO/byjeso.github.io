@@ -1,0 +1,6 @@
+.events{
+  @include media (tablet){
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

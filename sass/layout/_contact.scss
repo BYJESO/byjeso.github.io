@@ -1,0 +1,30 @@
+.contact {
+  padding: 1.5em 0;
+  background-color: $color-principal;
+  color: white;
+
+  &__email {
+    text-align: center;
+    &__title{
+    font-family: "Source Sans Pro", sans-serif;
+    }
+
+    .button--email {
+      @include media (tablet){
+        margin: unset;
+      }
+    }
+    @include media (tablet){
+      text-align: unset;
+
+    }
+  }
+
+  @include media (tablet){
+    padding: 0;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

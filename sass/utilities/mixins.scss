@@ -1,0 +1,6 @@
+
+@mixin card($background: var(--background-card)) {
+    background-color: $background;
+    box-shadow: var(--box-shadow);
+    color: var(--font-color);
+}

@@ -1,0 +1,10 @@
+.header {
+  background-color: var(--background-hero);
+  @include media(tablet){
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

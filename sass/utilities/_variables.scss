@@ -1,0 +1,38 @@
+//variables
+//generales 
+$color-principal: #03d6f6;
+$font-title: "Fjalla One", sans-serif;
+$font-regular: "Source Sans Pro", sans-serif;
+
+
+//others
+//header variables
+$nav-font-color: #fff;
+//hero variables
+$hero-title-color: #fff;
+$hero-strong-title: $color-principal;
+//burguer variables
+$burger-background: #171717;
+$burger-line-color: #fff;
+
+//dark mode variables
+:root {
+  --background-hero: #1d252c;
+  --background-card: #f4fbff;
+  --background-project: white;
+  --background: #fafafa;
+  --box-shadow: 1px 1px 10px 1px lightgrey;
+}
+
+:root.dark {
+  --background-hero: #110421;
+  --background-hero: #0c0317;
+  --background-card: #110421;
+  --background-card: #0c0317;
+  --background-project: #110421;
+  --background-project: #0c0317;
+  --background: #110421;
+  --background: #0c0317;
+  --font-color: white;
+  --box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.75);
+}

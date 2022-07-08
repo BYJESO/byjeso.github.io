@@ -1,0 +1,89 @@
+.project {
+  @include card(var(--background-project)) ;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+
+  &:hover {
+    box-shadow: 1px 1px 10px 1px $color-principal;
+  }
+
+  &__details{
+    @include media (tablet){
+      width: 50%;
+    }
+  }
+  
+  &__title {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    @include media (tablet) {
+      font-size: 30px;
+    }
+  }
+  
+  &__date,
+  &__url,
+  &__tech {
+    margin: 0.4em 0;
+    @include media (tablet){
+      margin: 10px 0;
+    }
+  }
+  
+  &__tech {
+    font-family: $font-title;
+    .tech-button {
+      margin-right: 5px;
+    }
+  }
+
+  strong {
+    font-family: $font-title;
+    color: $color-principal;
+  }
+  
+  &__link {
+    color: var(--font-color);
+    transition: none;
+  }
+  
+  &__link:hover {
+    color: $color-principal;
+  }
+  
+  &__description {
+    font-size: 0.8em;
+    @include media (tablet) {
+      font-size: 1.25rem;
+    }
+  }
+  
+  &__image__container {
+    margin: 0;
+    display: flex;
+    @include media (tablet){
+      width: 50%;
+    }
+  }
+  
+  &__image {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  @include media(tablet){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+}
+
+.project-course,
+.project-date,
+.project-url {
+  margin: 10px 0;
+}

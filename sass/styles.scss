@@ -1,0 +1,32 @@
+@import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'utilities/breakpoints';
+
+@import 'base/reset';
+@import 'base/typo';
+
+@import 'components/burger-buttons';
+@import 'components/tech-buttons';
+@import 'components/containers';
+@import 'components/logo';
+@import 'components/navs';
+@import 'components/buttons';
+@import 'components/dark-mode-button';
+@import 'components/switches';
+@import 'components/projects';
+@import 'components/projects';
+@import 'components/social';
+@import 'components/events';
+@import 'components/loader';
+
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/portfolio';
+@import 'layout/exp';
+@import 'layout/skills';
+@import 'layout/contact';
+@import 'layout/footer';
+
+.none {
+	display: none;
+}

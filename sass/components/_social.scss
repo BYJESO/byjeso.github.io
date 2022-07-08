@@ -1,0 +1,25 @@
+.social {
+  text-align: center;
+  &__link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-size: 50px 50px;
+    &:hover {
+      opacity: 0.7;
+    }
+    &--twitter {
+      background-image: url(../images/twitter.svg);
+    }
+    &--facebook {
+      background-image: url(../images/facebook.svg);
+    }
+    &--github {
+      background-image: url(../images/github.svg);
+    }
+    &--instagram {
+      background-image: url(../images/instagram.svg);
+    }
+  }
+}
