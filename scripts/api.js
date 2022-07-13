@@ -80,6 +80,16 @@ function insertProjects(projects) {
                     ${urlPrettier(project.url)}
                   </a></small>
               </p>
+
+			  <p class="project__url">
+                <small><strong>You can see it in:</strong>
+                  <a href="${
+										project.repositoryUrl
+									}" class="project__link" target="_blank" rel="noopener noreferrer">
+                    ${urlPrettier(project.repositoryUrl)}
+                  </a></small>
+              </p>
+
               <p class="project__description">
 							${project.description}
               </p>
